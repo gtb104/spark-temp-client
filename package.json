@@ -1,0 +1,11 @@
+{
+  "name": "spark-temp-client",
+  "version": "0.0.1",
+  "author": "Geoffrey T. Bell",
+  "description": "Call SparkJS API to retrieve temperature reading.",
+  "dependencies": {
+    "consolidate": "0.9.1",
+    "hapi": "^6.2.2",
+    "jade": "0.34.1"
+  }
+}

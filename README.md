@@ -1,4 +1,4 @@
-spark-temp-client
-=================
+Spark Temperature Client
+=========================
 
-Test app to interact with the Spark Core through the JS API.
+App to call the SparkJS API, to retrieve the temperature reading from a Spark Core.

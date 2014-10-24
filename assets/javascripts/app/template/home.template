@@ -1,0 +1,16 @@
+<div class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a ui-sref="home" class="navbar-brand">Spark Temp</a>
+      </div>
+      <ul class="nav navbar-nav pull-right">
+        <li><a ui-sref="home.about">about</a></li>
+        <li><a class="pseudo-link" ng-click="toggleLogin()">login</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <login class="pull-right" ng-show="showLogin"></login>
+    <p ng-hide="token">login to see a list of your devices</p>
+    <div ui-view=""></div>
+  </div>

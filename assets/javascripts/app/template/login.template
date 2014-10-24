@@ -1,0 +1,22 @@
+<div class="login">
+  <form ng-submit="submit()" ng-controller="FormCtrl">
+
+    <div class="input-group margin-bottom-sm">
+      <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+      <input type="email" class="form-control" ng-model="data.email" placeholder="Email address" required>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+      <input type="password" class="form-control" ng-model="data.password" placeholder="Password" required>
+    </div>
+
+    <button class="btn btn-default">Submit</button>
+    <i class="status fa fa-spinner fa-spin" ng-show="isSubmitting"></i>
+    <span class="error alert alert-danger" ng-show="isInvalid">Invalid credentials</span>
+  </form>
+  <div class="arrow-up"></div>
+</div>
+
+
+

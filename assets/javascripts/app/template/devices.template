@@ -1,0 +1,15 @@
+<h1>Devices</h1>
+<div ng-show="devices.length === 0">
+  <p>Retrieving device list...</p>
+</div>
+<div class="row">
+  <ul class="example-animate-container col-lg-4">
+    <li class="animate-repeat device" ng-class="device.connected ? 'online' : 'offline'" ng-repeat="device in devices" ng-show="devices.length > 0">
+      <i class="fa fa-check" title="online"></i>&ensp;<span ng-click="selectDevice(device)">{{device.name}}</span>
+    </li>
+  </ul>
+  <div class="details alert alert-info col-lg-8" ng-show="temp !== '-'">The temperature is {{temp}}&deg;F</div>
+</div>
+<div class="alert alert-warning" ng-show="devices === null">
+  <strong>No devices found...</strong>
+</div>
